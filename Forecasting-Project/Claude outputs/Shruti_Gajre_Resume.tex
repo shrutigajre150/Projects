@@ -1,0 +1,159 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\linespread{1.22}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\sloppy
+\setlength{\tabcolsep}{0in}
+
+\titlespacing*{\section}{0pt}{16pt}{6pt}
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+\renewcommand{\scshape}{}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=3pt,topsep=4pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Shruti Gajre} \\ \vspace{1pt}
+  \small +1 (510) 362-9377 $|$
+  \href{mailto:shrutigajre.official@gmail.com}{\underline{shrutigajre.official@gmail.com}} $|$
+  \href{https://linkedin.com/in/shrutigajre}{\underline{linkedin.com/in/shrutigajre}} $|$
+  \href{https://github.com/shrutigajre150}{\underline{github.com/shrutigajre150}} $|$
+  Bay Area, CA
+\end{center}
+
+\section{Professional Summary}
+{Data-focused engineer (M.S. Statistics, Data Science) building production software: backend APIs, data pipelines, and LLM workflows in Python, SQL, PostgreSQL, and AWS. Automated data validation across 100+ test cases at UL Solutions and supported AWS ingestion pipelines at UnitedHealthcare. Shipped PaperDeck, a RAG system with evaluations and guardrails (1.000 MRR, 100\% valid citations). Hands-on with robotics data at Meta.}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  {\item{
+    \textbf{GenAI and NLP}{: Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), prompt engineering, prompt and context management, AI agents, LangChain, LangGraph, OpenAI APIs, Hugging Face, text classification, summarization, information extraction} \\
+    \textbf{Programming and ML}{: Python, R, SQL, scikit-learn, pandas, NumPy, NLP, machine learning, predictive modeling, model evaluation (cross-validation, ROC-AUC, confusion matrices), time-series forecasting, Apache Spark} \\
+    \textbf{Retrieval and Data}{: Embeddings, vector search, semantic search, FAISS, PostgreSQL, SQL Server} \\
+    \textbf{Data and Analytics}{: ETL and data pipelines, data validation, anomaly detection, data quality, KPI tracking, healthcare and payor analytics} \\
+    \textbf{AI Development}{: FastAPI, Streamlit, REST APIs, API integration, document processing, AI automation, intelligent automation} \\
+    \textbf{Cloud and Tools}{: AWS (Kinesis, S3, Redshift), Azure, Git, GitHub, Power BI, Tableau}
+  }}
+\end{itemize}
+
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Meta Platforms Inc. (contract through Tundra Technical Solutions USA Inc.)}{Menlo Park, CA}
+    {Research Collaborator V (AI Data Operator)}{Oct 2026}
+    \resumeItemListStart
+      \resumeItem{Validated about 600 multimodal sessions per day against data collection protocols, re-collecting failures and maintaining accurate metadata so training datasets stayed complete, correct, and compliant with data security requirements.}
+      \resumeItem{Partnered with researchers and robotics engineers to diagnose data anomalies by session and task ID, driving protocol refinements that improved data quality.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {UL Solutions (Client: Apple)}{Fremont, CA}
+    {AI Intern}{May 2026 -- Aug 2026}
+    \resumeItemListStart
+      \resumeItem{Automated data validation and anomaly detection across 100+ test cases in Python, catching data-correctness issues early and reducing downstream testing delays by about 15\%.}
+      \resumeItem{Built Streamlit applications and FastAPI services for interactive data analysis, used by compliance and testing teams to review results.}
+      \resumeItem{Cut manual processing effort by 20\% by building repeatable Python and pandas workflows, speeding up report turnaround for testing teams.}
+      \resumeItem{Developed LLM document workflows (RAG with LangChain and FAISS, OpenAI and Hugging Face models) for classification, summarization, and extraction over regulatory documents, evaluating answer relevance on test queries.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {ValueMomentum (Client: UnitedHealthcare)}{Hyderabad, India}
+    {Data Analyst}{Jul 2022 -- May 2024}
+    \resumeItemListStart
+      \resumeItem{Partnered with business and engineering stakeholders to define member incentive program KPIs, translating business questions into SQL-based analyses and automated recurring performance reports that reduced manual data preparation.}
+      \resumeItem{Analyzed copay-offer, prescription savings, and health-action data from 20+ vendors and point-of-sale systems using SQL and Python, identifying data-quality issues affecting program KPIs and incentive reporting.}
+      \resumeItem{Used Apache Spark to analyze member behavior, examining patterns in prescription savings usage and incentive participation to support program performance evaluation.}
+      \resumeItem{Developed validation logic to reconcile earned member incentives against funded budgets, reducing manual reconciliation effort by approximately 60\% and improving financial reporting accuracy.}
+      \resumeItem{Wrote SQL queries in AWS Redshift to transform data ingested through Kinesis and S3 into curated datasets for downstream analysis and reporting.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \item
+    \textbf{Multi-Series Retail Sales Forecasting} \\[2pt]
+    \textit{Python, scikit-learn, pandas, Random Forest, Gradient Boosting, R (tidymodels, modeltime)} \\[2pt]
+    Code: \href{https://github.com/shrutigajre150/Projects}{\underline{github.com/shrutigajre150/Projects}}
+    \vspace{-7pt}
+    \resumeItemListStart
+      \resumeItem{Forecast 52 weeks of weekly sales across 7 store-department series, engineering leakage-free calendar, holiday, and lag-52 features for global Random Forest, Gradient Boosting, and Ridge models.}
+      \resumeItem{Validated against seasonal-naive baselines (52-week holdout, rolling backtest): Random Forest reached 7.6\% WAPE, 3\% better than baseline, while a growth-adjusted baseline won at 13 weeks (6.7\% WAPE).}
+    \resumeItemListEnd
+  \vspace{2pt}
+  \item
+    \textbf{PaperDeck: Research Paper Assistant with Cited Answers and Slide Generation} \\[2pt]
+    \textit{Python, FAISS, BM25, Sentence-Transformers, OpenAI API, python-pptx, Streamlit} \\[2pt]
+    Live: \href{https://paperdeck-shruti.streamlit.app}{\underline{paperdeck-shruti.streamlit.app}} $|$ Code: \href{https://github.com/shrutigajre150/paperdeck}{\underline{github.com/shrutigajre150/paperdeck}}
+    \vspace{-7pt}
+    \resumeItemListStart
+      \resumeItem{\textbf{Retrieval:} Built hybrid search (BM25 + MiniLM embeddings in FAISS, Reciprocal Rank Fusion) over 618 page-tagged passages from 8 arXiv papers, reaching 1.000 MRR and 100\% Hit@1 on 16 hand-labeled questions (up from 0.969 with embeddings alone) at about 16 ms per query.}
+      \resumeItem{\textbf{Answers:} Restricted the LLM to retrieved passages with mandatory [paper, page] citations, a relevance cutoff, and automatic removal of unretrieved citations; 75\% of answers fully supported (0.84 faithfulness), 100\% valid citations (35/35), and all out-of-scope questions declined.}
+      \resumeItem{\textbf{Slides and deployment:} Built an LLM slide agent that returns structured JSON rendered by python-pptx into a cited deck and summary per question; deployed on Streamlit Community Cloud with a bring-your-own-key design so no user keys are stored.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {California State University, East Bay}{Hayward, CA}
+    {Master of Science (M.S.) in Statistics (Data Science)}{Aug 2024 -- May 2026}
+  \resumeSubheading
+    {Vardhaman College of Engineering}{Hyderabad, India}
+    {Bachelor of Technology (B.Tech) in Electronics and Communication Engineering}{Aug 2020 -- May 2024}
+\resumeSubHeadingListEnd
+
+\section{Publications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small
+  \item \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    Multi-Algorithmic Genetic Disease Detection Using Pupillometry, Springer, Cham & Sep 2024 \\
+    Li-Fi Enhanced Object Tracking: A Cutting-Edge Approach, IEEE & Jan 2024 \\
+  \end{tabular*}
+\end{itemize}
+
+\end{document}

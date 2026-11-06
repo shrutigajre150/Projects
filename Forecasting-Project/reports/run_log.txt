@@ -1,0 +1,21 @@
+7 series x 143 weeks (2010-02-05 to 2012-10-26)
+
+52-week holdout
+                              model WAPE_% MAPE_%   MAE  RMSE  MASE Bias_%
+                      Random Forest   7.58   9.12 4,247 6,582 1.450  -3.17
+       Ensemble (mean of ML models)   7.63   9.20 4,272 6,660 1.446  -3.52
+                     Seasonal naive   7.83   9.01 4,384 6,724 1.388  -4.59
+        Seasonal naive + YoY growth   8.04   9.82 4,503 7,007 1.400  -2.90
+                  Gradient Boosting   8.18  10.07 4,585 7,466 1.461  -3.01
+Ridge (trend + Fourier seasonality)  11.71  14.98 6,557 9,409 2.168  -4.40
+
+Rolling 4 x 13-week backtest
+                              model WAPE_% MAPE_%   MAE  RMSE  MASE Bias_% WAPE_fold_sd
+        Seasonal naive + YoY growth   6.66   8.08 3,729 6,622 1.098  -0.37         0.92
+                      Random Forest   7.21   8.62 4,039 6,335 1.297  -2.44         1.12
+       Ensemble (mean of ML models)   7.66   8.98 4,289 6,597 1.321  -3.00         0.82
+                     Seasonal naive   7.83   9.01 4,384 6,724 1.293  -4.59         1.00
+                  Gradient Boosting   7.95   9.53 4,451 6,829 1.354  -3.24         0.97
+Ridge (trend + Fourier seasonality)  12.21  15.42 6,837 9,709 2.088  -3.34         1.62
+
+80% interval multipliers from backtest errors: [0.900, 1.154]
